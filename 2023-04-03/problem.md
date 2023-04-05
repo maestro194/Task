@@ -52,17 +52,19 @@ NO
 
 Kí pháp Ba Lan là một cách viết biều thức đại số. Đặc điểm cơ bản của cách viết này là việc không dùng đến các dấu ngoặc và luôn thực hiện từ trái qua phải. Ví dụ:
 
-Với biểu thức (x+y)*z ta có kí pháp Ba Lan của biểu thức là x y + z *.
+Với biểu thức $(x+y)*z$ ta có kí pháp Ba Lan của biểu thức là $x \space y + z \space *$.
 
-Cho một xâu kí tự S có độ dài L là biểu thức được viết bằng kí pháp Ba Lan, tính giá trị của biểu thức.
+Cho một xâu kí tự $S$ có độ dài $L$ là biểu thức được viết bằng kí pháp Ba Lan, tính giá trị của biểu thức.
 
 ### Ràng buộc
 
-L <= 10<sup>6</sup>
+$L$ <= 10<sup>6</sup>
+
+Giá trị của biểu thức được đảm bảo nằm trong khoảng giá trị số nguyên 64 bit
 
 ### Input
 
-Gồm 1 dòng chứa xâu ký tự S, chứa các chữ số từ 0-9, các dấu +, -, *, /, mỗi số hoặc dấu được các nhau bởi 1 dấu cách.
+Gồm 1 dòng chứa xâu ký tự $S$, chứa các chữ số từ 0-9, các dấu +, -, *, /, mỗi số hoặc dấu được các nhau bởi 1 dấu cách.
 
 ### Output
 
@@ -82,7 +84,7 @@ Gồm 1 dòng là giá trị của biểu thức
 90
 ```
 
-## <b>C: Fibonacci Rectangle </b>
+## <b> C: Fibonacci Rectangle </b>
 
 Dãy Fibonacci là một dãy vô hạn các số tự nhiên bắt đầu bằng hai phần từ 0 hoặc 1 và 1, các phần tử sau đó được thiết lập theo quy tắc một phần tử luôn bằng tổng 2 phần tử đứng trước nó.
 
@@ -147,6 +149,12 @@ Công ty X có một mạng lưới gồm $N$ máy tính, mỗi máy có chỉ s
 
 ### Ràng buộc
 
+$N, Q <= 10$<sup>5</sup>
+
+$2 <=$ $P$<sub>i</sub> $<= 10$<sup>18</sup>
+
+$1 <= u, v <= 10$<sup>5</sup>
+
 ### Input
 
 Dòng 1: Chứa 2 số nguyên $N$, $Q$; số máy tính trong công ty và số gói tin cần được gửi
@@ -161,7 +169,23 @@ Gồm $Q$ dòng, mỗi dòng in ra yêu cầu bài toán; "YES" nếu có thể 
 
 ### Sample
 
-### Subtask
+- Input
+> 5 3  
+> 15 6 3 4 7  
+> 1 2  
+> 2 5  
+> 1 3
+
+- Output
+> YES  
+> NO  
+> YES
+
+### Subtask (sửa sau)
+
+- Sub 1: $N <= 100$
+- Sub 2: $Q = 1$
+- Sub 3: Điều kiện mặc định của đề bài
 
 ## <b> E: Explosion </b>
 
