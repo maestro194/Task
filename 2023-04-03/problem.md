@@ -44,9 +44,9 @@ NO
 
 ### Subtask
 
-- Sub 1: N <= 10<sup>6</sup> (40%)
-- Sub 2: N <= 10<sup>12</sup> (40%)
-- Sub 3: Ràng buộc mặc định của đề bài (20%)
+- Sub 1: N <= 10<sup>6</sup> (45%)
+- Sub 2: N <= 10<sup>12</sup> (45%)
+- Sub 3: Ràng buộc mặc định của đề bài (10%)
 
 ## <b> B: Polish Notation </b>
 
@@ -110,7 +110,7 @@ Với mỗi test case, cho số $N$ và một tọa độ $(x, y)$. Có tồn t�
 
 $T <= 10$<sup>6</sup>
 
-$N <= 44$
+$N <= 40$
 
 $1 <= x, y <= F(N + 1)$
 
@@ -151,9 +151,9 @@ Công ty X có một mạng lưới gồm $N$ máy tính, mỗi máy có chỉ s
 
 $N, Q <= 10$<sup>5</sup>
 
-$2 <=$ $P$<sub>i</sub> $<= 10$<sup>18</sup>
+$2 <=$ $P$<sub>i</sub> $<= 10$<sup>9</sup>
 
-$1 <= u, v <= 10$<sup>5</sup>
+$1 <= u, v <= N$
 
 ### Input
 
@@ -183,9 +183,9 @@ Gồm $Q$ dòng, mỗi dòng in ra yêu cầu bài toán; "YES" nếu có thể 
 
 ### Subtask (sửa sau)
 
-- Sub 1: $N <= 100$
-- Sub 2: $Q = 1$
-- Sub 3: Điều kiện mặc định của đề bài
+- Sub 1: $N <= 1000, Q <= 100$ (20%)
+- Sub 2: $Q = 1$ (30%)
+- Sub 3: Điều kiện mặc định của đề bài (50%)
 
 ## <b> E: Explosion </b>
 
@@ -238,4 +238,5 @@ Gồm 1 số nguyên duy nhất là kết quả của bài toán
 
 ### Subtask
 
-Sub 1: $N <= 100$
+Sub 1: $N <= 1000$ (40%)
+Sub 2: Điều kiện mặc định của đề bài (60%)
