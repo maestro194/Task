@@ -84,7 +84,7 @@ Gồm 1 dòng là giá trị của biểu thức
 90
 ```
 
-## <b> C: Fibonacci Rectangle </b>
+## <b> C: Fibonacci Rectangle (CF-1811D) </b>
 
 Dãy Fibonacci là một dãy vô hạn các số tự nhiên bắt đầu bằng hai phần từ 0 hoặc 1 và 1, các phần tử sau đó được thiết lập theo quy tắc một phần tử luôn bằng tổng 2 phần tử đứng trước nó.
 
@@ -143,7 +143,7 @@ Gồm $T$ dòng, mỗi dòng gồm 1 xâu "YES" hoặc "NO" là kết quả củ
 
 Một cách vẽ cho test case 1 và 3
 
-## <b> D: Transmit </b>
+## <b> D: Transmit (CF-1775D) </b>
 
 Công ty X có một mạng lưới gồm $N$ máy tính, mỗi máy có chỉ số khả năng làm việc là $P$<sub>i</sub>. 2 máy tính $i$ và $j$ trong công ty có thể truyền tin cho nhau nếu như $gcd(P$<sub>i</sub>$,P$<sub>j</sub>$) \neq 1$. Công ty đang có $Q$ gói tin, mỗi gói cần được chuyển từ máy $u$ đến máy $v$. Hãy cho biết với mỗi gói tin công ty có thể thực hiện gửi tin trong mạng lưới của mình không.
 
@@ -181,13 +181,13 @@ Gồm $Q$ dòng, mỗi dòng in ra yêu cầu bài toán; "YES" nếu có thể 
 > NO  
 > YES
 
-### Subtask (sửa sau)
+### Subtask
 
 - Sub 1: $N <= 1000, Q <= 100$ (20%)
 - Sub 2: $Q = 1$ (30%)
 - Sub 3: Điều kiện mặc định của đề bài (50%)
 
-## <b> E: Explosion </b>
+## <b> E: Explosion (CF-1795E) </b>
 
 Megumin đang chiến đấu ở trên một bãi quái vật. Bãi quái gốm $N$ con quái vật, con quái thứ $i$ có lượng máu là $H$<sub>i</sub>. Megumin có 2 kĩ năng như sau:
 - Burn: Megumin niệm chiêu lên 1 con quái $i$ bất kỳ, gây 1 sát thương cho con quái này. Kĩ năng này tiêu hao 1 MP.
