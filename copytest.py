@@ -2,7 +2,7 @@ import shutil
 import os
 
 taskname = "Transmit"
-dest_dir = "2023-04-03/D_Transmit/Test01"
+dest_dir = "2023-04-03/D_Transmit/Test20"
 
 if not os.path.exists(dest_dir):
     os.makedirs(dest_dir)
