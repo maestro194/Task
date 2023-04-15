@@ -1,7 +1,7 @@
 import os
 
 # Define the path where you want to create directories
-path = "/2023-04-03/C_FibonacciRectangle/"
+path = "/2023-04-03/D_Transmit/"
 
 # Create directories from Test01 to Test20
 for i in range(1, 21):

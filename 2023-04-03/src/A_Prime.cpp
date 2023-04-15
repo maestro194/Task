@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
+#include <chrono>
 #pragma GCC optimization ("unrolled-loops")
+
 using namespace std;
+using namespace std::chrono;
 
 #define filename "Prime"
 #define endl '\n'
@@ -20,15 +23,31 @@ void FileInOut()
   }
 }
 
+long long multi(long long a, long long b, long long mod) {
+  long long res = 0;
+
+  a %= mod;
+
+  while(b > 0) {
+    if(b & 1)
+      res = (res + a) % mod;
+    
+    a = (a + a) % mod;
+    b >>= 1;
+  }
+
+  return res;
+}
+
 long long power(long long a, long long n, long long mod) {
   long long res = 1;
   a = a % mod;
   
   while(n > 0) {
     if(n & 1)
-      res = res * a % mod;
-    n >>= 1;
-    a = a * a % mod;
+      res = multi(res, a, mod);
+    n = n >> 1;
+    a = multi(a, a, mod);
   }
   return res;
 }
@@ -37,10 +56,10 @@ bool millerTest(long long d, long long n)
 {
   // Pick a random number in [2..n-2]
   // Corner cases make sure that n > 4
-  int a = 2 + mt64() % (n - 4);
+  long long a = 2 + mt64() % (n - 2);
 
   // Compute a^d % n
-  int x = power(a, d, n);
+  long long x = power(a, d, n);
 
   if (x == 1  || x == n-1)
     return true;
@@ -51,7 +70,7 @@ bool millerTest(long long d, long long n)
   // (iii) (x^2) % n is not n-1
   while (d != n-1)
   {
-    x = (x * x) % n;
+    x = multi(x, x, n);
     d *= 2;
 
     if (x == 1)      return false;
@@ -87,9 +106,16 @@ bool isPrime(long long n, int k)
 void Solve()
 {
   // number of iterations for the task, the higher the more accurate
-	int iter = 10;
+	int iter = 100;
   long long n;
   cin >> n;
+
+  // for(long long i = 2; i <= sqrt(n); i ++)
+  //   if(n % i == 0) {
+  //     cout << "NO";
+  //     return;
+  //   }
+  // cout << "Y";
 
   cout << (isPrime(n, iter) ? "YES" : "NO");
 }
@@ -98,8 +124,16 @@ int32_t main()
 {
   FileInOut();
 
+  auto start_time = high_resolution_clock::now();
+
   int test = 1;
   // cin>>test;
   while(test--)
     Solve();
+
+  auto end_time = high_resolution_clock::now();
+  auto duration = duration_cast<nanoseconds>(end_time - start_time);
+
+  // cout << endl;
+  // cout << "Execution time: " << duration.count() << endl;
 }

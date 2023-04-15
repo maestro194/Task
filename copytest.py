@@ -1,17 +1,17 @@
 import shutil
 import os
 
-taskname = "Explosion"
-dest_dir = "2023-04-03/E_Explosion/Test20"
+taskname = "Transmit"
+dest_dir = "2023-04-03/D_Transmit/Test01"
 
 if not os.path.exists(dest_dir):
     os.makedirs(dest_dir)
 
 src_input = "Testing/TestCase.inp"
-dst_input = "Explosion.inp"
+dst_input = "Transmit.inp"
 
 src_output = "Testing/TestCase.out"
-dst_output = "Explosion.out"
+dst_output = "Transmit.out"
 
 dst_input_file = os.path.join(dest_dir, dst_input)
 dst_output_file = os.path.join(dest_dir, dst_output)
